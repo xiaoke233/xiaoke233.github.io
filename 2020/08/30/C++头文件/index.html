@@ -1,0 +1,1257 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="C++常用头文件及其函数, xiaoke&#39;s Blog">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>C++常用头文件及其函数 | xiaoke&#39;s Blog</title>
+    <link rel="icon" type="image/png" href="/sunxiaoke233/favicon1.png">
+
+    <link rel="stylesheet" type="text/css" href="/sunxiaoke233/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/sunxiaoke233/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/sunxiaoke233/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/sunxiaoke233/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/sunxiaoke233/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/sunxiaoke233/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/sunxiaoke233/css/my.css">
+
+    <script src="/sunxiaoke233/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 4.2.1"><link rel="stylesheet" href="/sunxiaoke233/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/sunxiaoke233/css/prism-line-numbers.css" type="text/css"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/sunxiaoke233/" class="waves-effect waves-light">
+                    
+                    <img src="/sunxiaoke233/medias/logo1.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">xiaoke&#39;s Blog</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/sunxiaoke233/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>主页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/sunxiaoke233/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/sunxiaoke233/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>时间线</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/sunxiaoke233/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/sunxiaoke233/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/sunxiaoke233/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>好友</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/sunxiaoke233/medias/logo1.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">xiaoke&#39;s Blog</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/sunxiaoke233/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			主页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/sunxiaoke233/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/sunxiaoke233/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			时间线
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/sunxiaoke233/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/sunxiaoke233/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/sunxiaoke233/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			好友
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/sunxiaoke233/medias/featureimages/7.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">C++常用头文件及其函数</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/sunxiaoke233/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/sunxiaoke233/categories/C-%E5%A4%B4%E6%96%87%E4%BB%B6/" class="post-category">
+                                C++头文件
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2020-08-30
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2020-08-30
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    3,124
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    13 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="cstdlib"><a href="#cstdlib" class="headerlink" title="cstdlib"></a>cstdlib</h1><h2 id="rand"><a href="#rand" class="headerlink" title="rand"></a>rand</h2><p>1、rand()不需要参数，它会返回一个从0到最大随机数的任意整数，最大随机数的大小通常是固定的一个大整数。</p>
+<p>2、如果你要产生0<code>~</code>99这100个整数中的一个随机整数，可以表达为：int num = rand() % 100;这样，num的值就是一个0<code>~</code>99中的一个随机数了。</p>
+<p>3、如果要产生1~100，则是这样：int num = rand() % 100 + 1;  </p>
+<p>4、总结来说，可以表示为：int num = rand() % n +a;<br>其中的a是起始值，n-1+a是终止值，n是整数的范围。</p>
+<p>5、一般性：rand() % (b-a+1)+ a ;    就表示  a~b 之间的一个随机整数。</p>
+<p>6、若要产生0<code>~</code>1之间的小数，则可以先取得0<code>~</code>10的整数，然后均除以10即可得到“随机到十分位”的10个随机小数。<br>若要得到“随机到百分位”的随机小数，则需要先得到0~100的10个整数，然后均除以100，其它情况依 此类推。</p>
+<p>7、通常rand()产生的随机数在每次运行的时候都是与上一次相同的，这样是为了便于程序的调试。</p>
+<h2 id="atoi"><a href="#atoi" class="headerlink" title="atoi"></a>atoi</h2><p>1、atoi函数把字符串转换成整型数。其含义是ASCII to integer 的缩写。</p>
+<p>2、函数说明</p>
+<p>原型：<br>int atoi(const char *nptr);<br>UNICODE<br>_wtoi()</p>
+<p>2）函数说明：编辑参数nptr字符串，如果第一个非空格字符存在，是数字或者正负号则开始做类型转换，之后检测到非数字(包括结束符 \0) 字符时停止转换，返回整型数。否则，返回零。<br>所需包含头文件: #include &lt;stdlib.h&gt;<br>程序例：<br>1）</p>
+<pre class="line-numbers language-c"><code class="language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdlib.h></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h></span></span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+  <span class="token keyword">float</span> n<span class="token punctuation">;</span>
+  <span class="token keyword">char</span> <span class="token operator">*</span>str <span class="token operator">=</span> <span class="token string">"12345.67"</span><span class="token punctuation">;</span>
+  n <span class="token operator">=</span> <span class="token function">atoi</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"string = %s integer = %f\n"</span><span class="token punctuation">,</span> str<span class="token punctuation">,</span> n<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>执行结果：<br>string = 12345.67 integer = 12345.000000</p>
+<p>2）</p>
+<pre class="line-numbers language-c"><code class="language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdlib.h></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h></span></span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+  <span class="token keyword">char</span> a<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">"-100"</span> <span class="token punctuation">;</span>
+  <span class="token keyword">char</span> b<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">"123"</span> <span class="token punctuation">;</span>
+  <span class="token keyword">int</span> c <span class="token punctuation">;</span>
+  c <span class="token operator">=</span> <span class="token function">atoi</span><span class="token punctuation">(</span> a <span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token function">atoi</span><span class="token punctuation">(</span> b <span class="token punctuation">)</span> <span class="token punctuation">;</span>
+  <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"c = %d\n"</span><span class="token punctuation">,</span> c<span class="token punctuation">)</span> <span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>执行结果：<br>c = 23</p>
+<h1 id="sstream"><a href="#sstream" class="headerlink" title="sstream"></a>sstream</h1><h2 id="stringstream"><a href="#stringstream" class="headerlink" title="stringstream"></a>stringstream</h2><p>stringstream 是字符串流，相当于一个大的缓冲区，很多类型的数据都可以存储，也可以从中读出，就像文件流一样。<br>stringstream ss(s); //定义了一个字符串流，并用一个字符串初始化<br>ss &lt;&lt; i;// 将i读入到ss中去<br>ss &gt;&gt; i;// 将ss中的单词逐个赋值到i<br>cout &lt;&lt;  ss.str();// 以字符串的形式输出ss中的所有内容</p>
+<pre class="line-numbers language-c"><code class="language-c"><span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;iostream></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;cstring></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;sstream></span></span>
+using namespace std<span class="token punctuation">;</span>  
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    stringstream ss<span class="token punctuation">;</span>
+    string s1<span class="token operator">=</span><span class="token string">"as   df"</span><span class="token punctuation">;</span>
+    ss<span class="token operator">&lt;&lt;</span>s1<span class="token punctuation">;</span>
+    string s2<span class="token punctuation">;</span>
+    ss<span class="token operator">>></span>s2<span class="token punctuation">;</span>
+    string s3<span class="token punctuation">;</span>
+    ss<span class="token operator">>></span>s3<span class="token punctuation">;</span>
+    cout<span class="token operator">&lt;&lt;</span>s2<span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span>
+    cout<span class="token operator">&lt;&lt;</span>s3<span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span> 
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWIAAABFCAYAAABwguxAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAALTSURBVHhe7d3RbeJAFEDRFADduJepIZv9diNTifugJ+/MGBvGEJKgJe/nWDpSBOT36ukxNm/v739ml8vlcsVdLcSHwwGAIEIMEEyIAYIJMUAwIQYIJsQAwYQYIJgQAwTrQjykPE/TaT6dzqY8p+HY/UN1HNKcp6n7XM7jnI63nwXgsS3Ew1jD2oe3vTaN83AV2ONxmMcS4TENl8+VgJ9O5bU70QbgsS7EU059dIdxnmqcuxDXabiPczWMWYgBnnCzI64Tb0rjnPO6puhDXKVcoj2V8JapeB9kAH5mC/Ey6dbwTsu+N5XpuAR5PxGv6nvrnrhG+d4uGYCvtRAve98S4W+sJvbq/7Yv+eyIAZ6yhLgF9zakd3fEQ7o7/bYd83j5Ag+A7zlPxGnOdcVwNREPJbhjPp+kKO+P58ge6wmJ3SqixrlO1DndBhqAx94+Pv62P+r0u+yIF0uUzyuLq2l5+Vw9N3x1jrjulU3DAE/ZQgxADCEGCCbEAMGEGCCYEAMEE2KAYJ+GeHnmxHKWeHQ+GOBlPg/xdkPH5zdq7M8etxs9HtwODcCth6uJ9RkU90K8vy16vTsvXz2nGICvPR3i9tD4nG5eB+BnhBggWBfi673w8vyI/mE+6/ph2wlfu/OrHQB8bQvx9gS2Et8a1HZqok695TUTMcDrbCFuYb37Q6FCDPBKW4hTrtNwf+JBiAFer4V4Da4QA/w+IQYI1u+Id2G93KQhxACvsoV4f2dcm4Zznqc6KZfg7n8wVIgB/o8txFU9R7w9O6L9QGhdTUwlxHkez4FuAa7vd/yUPsCzuhAD8PuEGCCYEAMEE2KAYEIMEEyIAYIJMUAwIQYIJsQAwYQYIJgQAwQTYoBgQgwQTIgBggkxQDAhBggmxADBhBggmBADBBNigGBCDBBMiAGCCTFAMCEGCCbEAMGEGCCYEAMEE2KAYEIMEEyIAYIJMUCow/wPsu/UuxVpMZcAAAAASUVORK5CYII="></p>
+<h1 id="cctype"><a href="#cctype" class="headerlink" title="cctype"></a>cctype</h1><h2 id="isalpha等字符检测函数"><a href="#isalpha等字符检测函数" class="headerlink" title="isalpha等字符检测函数"></a>isalpha等字符检测函数</h2><p>tolower()函数是把字符串都转化为小写字母<br>toupper()函数是把字符串都转化为大写字母</p>
+<pre class="line-numbers language-c"><code class="language-c"><span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;iostream></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;cstring></span> </span>
+<span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;stdio.h></span> </span>
+<span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;cctype></span></span>
+using namespace std<span class="token punctuation">;</span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">char</span> a<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token string">"asdf"</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span><span class="token function">strlen</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+      a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">=</span><span class="token function">toupper</span><span class="token punctuation">(</span>a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    cout<span class="token operator">&lt;&lt;</span>a<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><img src="data:image/png;base64,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"></p>
+<p>(1)isalnum(c)<br>检查参数 c 是否为英文字母或阿拉伯数字, 在标准c 中相当于使用”isalpha(c) || isdigit(c)”做测试.</p>
+<p>(2)isalpha(c)<br>检查参数 c 是否为英文字母, 在标准c 中相当于使用”isupper(c)||islower(c)”做测试.</p>
+<p>(3)issupper(c)<br>检查参数 c 是否为大写英文字母.返回值若参数c 为大写英文字母, 则返回TRUE, 否则返回NULL(0).</p>
+<p>(4)islower(c)<br>检查参数 c 是否为小写英文字母.返回值若参数c 为小写英文字母, 则返回TRUE, 否则返回NULL(0).</p>
+<p>(5)isdigit(c)<br>检查参数 c 是否为阿拉伯数字0 到9.返回值若参数c 为阿拉伯数字, 则返回TRUE, 否则返回NULL(0).</p>
+<p>(6)isascii(c)<br>检查参数 c 是否为ASCII 码字符, 也就是判断c 的范围是否在0 到127 之间.</p>
+<p>(7)iscntrl(c)<br>检查参数 c 是否为ASCII 控制码, 也就是判断c 的范围是否在0 到30 之间.</p>
+<p>(8)isspace(c)<br>检查参数 c 是否为空格字符, 也就是判断是否为空格(‘’)、定位字符(‘\t’)、CR(‘\r’)、换行(‘\n’)、<br>垂直定位字符(‘\v’)或翻页(‘\f’)的情况.<br>返回值若参数c 为空格字符, 则返回TRUE, 否则返回NULL(0).</p>
+<p>(9)ispunct(c)<br>检查参数 c 是否为标点符号或特殊符号. 返回TRUE 也就是代表参数c 为非空格、非数字和非英文字母.<br>返回值若参数c 为标点符号或特殊符号, 则返回TRUE, 否则返回NULL(0).<br>附加说明此为宏定义, 非真正函数.</p>
+<p>(10)isgraph(c)<br>检查参数 c 是否为可打印字符, 若c 所对应的ASCII 码可打印, 且非空格字符则返回TRUE.<br>返回值若参数c 为可打印字符, 则返回TRUE, 否则返回NULL(0).<br>附加说明此为宏定义, 非真正函数.</p>
+<h1 id="cstring"><a href="#cstring" class="headerlink" title="cstring"></a>cstring</h1><h2 id="memcpy-内存拷贝函数"><a href="#memcpy-内存拷贝函数" class="headerlink" title="memcpy(内存拷贝函数)"></a>memcpy(内存拷贝函数)</h2><p>memcpy(b,a,sizeof(int)*k)     整形数组a复制k个元素到b数组<br>memcpy(b,a,sizeof(double)*k)     浮点形数组a复制k个元素到b数组<br>memcpy(b,a,sizeof(a))     数组a全部复制到b数组</p>
+<h2 id="memset"><a href="#memset" class="headerlink" title="memset"></a>memset</h2><p>memset(a,0,sizeof(a))     把数组a清零<br>memset(a,-1,sizeof(a))    全部置为-1<br><strong>注意：只能置0和-1</strong></p>
+<h2 id="strchr字符串中查找单个字符"><a href="#strchr字符串中查找单个字符" class="headerlink" title="strchr字符串中查找单个字符"></a>strchr字符串中查找单个字符</h2><pre class="line-numbers language-c"><code class="language-c"><span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;iostream></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;cstring></span> </span>
+<span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;stdio.h></span> </span>
+using namespace std<span class="token punctuation">;</span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">char</span> a<span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">char</span> b<span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token punctuation">{</span><span class="token string">'3'</span><span class="token punctuation">,</span><span class="token string">'4'</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token function">sprintf</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span><span class="token string">"%d%d"</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    cout<span class="token operator">&lt;&lt;</span><span class="token function">strchr</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span><span class="token string">'2'</span><span class="token punctuation">)</span><span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">strchr</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>b<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">==</span><span class="token constant">NULL</span><span class="token punctuation">)</span>
+      cout<span class="token operator">&lt;&lt;</span><span class="token string">"没找到"</span><span class="token punctuation">;</span> 
+    <span class="token comment" spellcheck="true">//printf("%c\n",a[1]);</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>查找字符串a中是否含有字符2，有的话，返回位置（下标从1开始），没的话，返回NULL；</p>
+<h2 id="getline"><a href="#getline" class="headerlink" title="getline"></a>getline</h2><pre class="line-numbers language-c"><code class="language-c"><span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;iostream></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;cmath></span> </span>
+<span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;stdio.h></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;cstring></span></span>
+using namespace std<span class="token punctuation">;</span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    string a<span class="token punctuation">;</span>
+    <span class="token function">getline</span><span class="token punctuation">(</span>cin<span class="token punctuation">,</span>a<span class="token punctuation">,</span><span class="token string">'#'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    cout<span class="token operator">&lt;&lt;</span>a<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>读入字符串a，遇到‘#’时结束读入，‘#’是自己定义的，可以是任何字符，getline（cin，a）默认遇到回车结束读入</p>
+<h2 id="strcpy（复制）"><a href="#strcpy（复制）" class="headerlink" title="strcpy（复制）"></a>strcpy（复制）</h2><p>strcpy（a，b）将b字符串复制到a字符串<br>a，b为字符型数组，不能是string</p>
+<h2 id="strcmp（比较）"><a href="#strcmp（比较）" class="headerlink" title="strcmp（比较）"></a>strcmp（比较）</h2><p>strcmp（参数1，参数2）<br>功 能: 比较参数1和参数（1、若参数1&gt;参数2，返回正数；2、若参数1&lt;参数2，返回负数；3、若参数1=参数2，返回0；）<br>比较的是字符数组，不能比较string</p>
+<h2 id="compare（比较）"><a href="#compare（比较）" class="headerlink" title="compare（比较）"></a>compare（比较）</h2><p>比较，参数可以是string，char型指针，”asdf”等具体字符串</p>
+<pre class="line-numbers language-c"><code class="language-c"><span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;iostream></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;cmath></span> </span>
+<span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;stdio.h></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;cstring></span></span>
+using namespace std<span class="token punctuation">;</span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    string a<span class="token operator">=</span><span class="token string">"asdf"</span><span class="token punctuation">;</span>
+    string b<span class="token operator">=</span><span class="token string">"asdf"</span><span class="token punctuation">;</span>
+    cout<span class="token operator">&lt;&lt;</span>a<span class="token punctuation">.</span><span class="token function">compare</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span><span class="token comment" spellcheck="true">//相等返回0，a>b返回正数（a的长度减b的长度）</span>
+    <span class="token comment" spellcheck="true">//a&lt;b返回负数（b的长度减a的长度） </span>
+    cout<span class="token operator">&lt;&lt;</span>a<span class="token punctuation">.</span><span class="token function">compare</span><span class="token punctuation">(</span><span class="token string">"as"</span><span class="token punctuation">)</span><span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span>
+    cout<span class="token operator">&lt;&lt;</span>a<span class="token punctuation">.</span><span class="token function">compare</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token string">"asdf"</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span><span class="token comment" spellcheck="true">//a的0到4和asdf的前1个字符比较 </span>
+    <span class="token comment" spellcheck="true">//cout&lt;&lt;a.compare("asdf",1)&lt;&lt;endl;//这样写不对，要加a的范围 </span>
+    cout<span class="token operator">&lt;&lt;</span>a<span class="token punctuation">.</span><span class="token function">compare</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span>b<span class="token punctuation">)</span><span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span>
+    cout<span class="token operator">&lt;&lt;</span>a<span class="token punctuation">.</span><span class="token function">compare</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span>b<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span><span class="token comment" spellcheck="true">//a的0到4和b的0到3比较 </span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><img src="data:image/png;base64,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"></p>
+<h2 id="strcat-字符串拼接"><a href="#strcat-字符串拼接" class="headerlink" title="strcat(字符串拼接)"></a>strcat(字符串拼接)</h2><p>strcat(str1, str2);将str2连接到str1后<br>只能是字符数组，不能是string</p>
+<h2 id="find（查找）"><a href="#find（查找）" class="headerlink" title="find（查找）"></a>find（查找）</h2><p>1.find()<br>查找第一次出现的目标字符串：</p>
+<pre class="line-numbers language-c"><code class="language-c">string s1<span class="token operator">=</span><span class="token string">"asdfgh"</span><span class="token punctuation">;</span>
+string s2<span class="token operator">=</span><span class="token string">"df"</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> ans<span class="token operator">=</span>s1<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span>s2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+cout<span class="token operator">&lt;&lt;</span>ans<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>ans=2;<br>若找不到，则返回-1</p>
+<p>查找从指定位置开始的第一次出现的目标字符串：</p>
+<pre class="line-numbers language-c"><code class="language-c">string s1<span class="token operator">=</span><span class="token string">"asdfgh"</span><span class="token punctuation">;</span>
+string s2<span class="token operator">=</span><span class="token string">"df"</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> ans<span class="token operator">=</span>s1<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span>s2<span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+cout<span class="token operator">&lt;&lt;</span>ans<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>ans=2;<br>位置还是从0开始，若找不到，则返回-1</p>
+<p>2.find_first_of()<br>查找子串中的某个字符最先出现的位置。</p>
+<pre class="line-numbers language-c"><code class="language-c">string s1<span class="token operator">=</span><span class="token string">"asdfgh"</span><span class="token punctuation">;</span>
+string s2<span class="token operator">=</span><span class="token string">"cg"</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> ans<span class="token operator">=</span>s1<span class="token punctuation">.</span><span class="token function">find_first_of</span><span class="token punctuation">(</span>s2<span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+cout<span class="token operator">&lt;&lt;</span>ans<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>ans=4；<br>只要s1中包含s2中的任一字符，就查找成功<br>也可指定开始查找的位置</p>
+<p>3.find_first_not_of()<br>查找字符串中不是某个字符 最先出现的位置</p>
+<pre class="line-numbers language-c"><code class="language-c">string a<span class="token operator">=</span><span class="token string">"1002345"</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> b<span class="token operator">=</span>a<span class="token punctuation">.</span><span class="token function">find_first_not_of</span><span class="token punctuation">(</span><span class="token string">'1'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+cout<span class="token operator">&lt;&lt;</span>b<span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span><span class="token comment" spellcheck="true">//b=1</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>从第0个位置开始删除不是’0’的字符，遇到第一个不是’0’的字符时停止</p>
+<pre class="line-numbers language-c"><code class="language-c">string a<span class="token operator">=</span><span class="token string">"001002345"</span><span class="token punctuation">;</span>
+a<span class="token operator">=</span>a<span class="token punctuation">.</span><span class="token function">substr</span><span class="token punctuation">(</span>a<span class="token punctuation">.</span><span class="token function">find_first_not_of</span><span class="token punctuation">(</span><span class="token string">'0'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+cout<span class="token operator">&lt;&lt;</span>a<span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span><span class="token comment" spellcheck="true">//a="1002345"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>3.find_last_of()<br>与find_first_of一样，只不过是从后往前搜的</p>
+<h2 id="substr（截取）"><a href="#substr（截取）" class="headerlink" title="substr（截取）"></a>substr（截取）</h2><p>b.substr(pos,n);<br>第一个参数为从截取的起始位置，第二个参数为截取的长度</p>
+<p>string a=”12345”;<br>b=a.substr(0,2);         //b=”12”</p>
+<h2 id="append-追加"><a href="#append-追加" class="headerlink" title="append (追加)"></a>append (追加)</h2><p>append函数是向string的后面追加字符或字符串。</p>
+<p>1).向string的后面加C-string<br>string s = “hello “; const char *c = “out here “;<br>s.append(c); // 把c类型字符串s连接到当前字符串结尾<br>s = “hello out here”;</p>
+<p>2).向string的后面加C-string的一部分<br>string s=”hello “；const char *c = “out here “;<br>s.append(c,3); // 把c类型字符串s的前n个字符连接到当前字符串结尾<br>s = “hello out”;</p>
+<p>3).向string的后面加string<br>string s1 = “hello “; string s2 = “wide “; string s3 = “world “;<br>s1.append(s2); s1 += s3; //把字符串s连接到当前字符串的结尾<br>s1 = “hello wide “; s1 = “hello wide world “;</p>
+<p>4).向string的后面加string的一部分<br>string s1 = “hello “, s2 = “wide world “;<br>s1.append(s2, 5, 5); ////把字符串s2中从5开始的5个字符连接到当前字符串的结尾<br>s1 = “hello world”;<br>string str1 = “hello “, str2 = “wide world “;<br>str1.append(str2.begin()+5, str2.end()); //把s2的迭代器begin()+5和end()之间的部分连接到当前字符串的结尾<br>str1 = “hello world”;</p>
+<p>5).向string后面加多个字符<br>string s1 = “hello “;<br>s1.append(4,’!’); //在当前字符串结尾添加4个字符!<br>s1 = “hello !!!!”;</p>
+<p>C++ string append()添加文本<br>使用append()添加文本常用方法:<br>直接添加另一个完整的字符串:<br>如str1.append(str2);<br>添加另一个字符串的某一段子串:<br>如str1.append(str2, 11, 7);<br>添加几个相同的字符:<br>如str1.append(5, ‘.’);<br>注意,个数在前字符在后.上面的代码意思为在str1后面添加5个”.”.</p>
+<h2 id="c-str"><a href="#c-str" class="headerlink" title="c_str()"></a>c_str()</h2><p>语法: const char *c_str();</p>
+<p>c_str()函数返回一个指向正规C字符串的指针, 内容与本string串相同. </p>
+<p>这是为了与c语言兼容，在c语言中没有string类型，故必须通过string类对象的成员函数c_str()把string 对象转换成c中的字符串样式。</p>
+<p>注意:一定要使用strcpy()函数 等来操作方法c_str()返回的指针 </p>
+<p>1、比如:最好不要这样: </p>
+<p>char* c;</p>
+<p>string s=”1234”;</p>
+<p>c = s.c_str(); //c最后指向的内容是垃圾，因为s对象被析构，所以不能直接利用c_str返回的字符串，要利用strcpy等函数进行复制后再使用</p>
+<p>2、其内容被处理应该这样用: </p>
+<p>char c[20];</p>
+<p>string s=”1234”;</p>
+<p>strcpy(c,s.c_str()); </p>
+<p>这样才不会出错，c_str()返回的是一个临时指针，不能对其进行操作。</p>
+<p>3、再举个例子c_str() 以 char* 形式传回 string 内含字符串如果一个函数要求char*参数，可以使用c_str()方法:</p>
+<p>string s = “Hello World!”;</p>
+<p>printf(“%s”, s.c_str()); //输出 “Hello World!”</p>
+<h1 id="iomanip"><a href="#iomanip" class="headerlink" title="iomanip"></a>iomanip</h1><h2 id="stew（设置位宽）"><a href="#stew（设置位宽）" class="headerlink" title="stew（设置位宽）"></a>stew（设置位宽）</h2><p>①  cout&lt;&lt;’A’&lt;&lt;setfill(‘<em>‘)&lt;&lt;left&lt;&lt;setw(7)&lt;&lt;’B’&lt;&lt;endl;<br>②  cout&lt;&lt;setfill(‘</em>‘)&lt;&lt;left&lt;&lt;setw(7)&lt;&lt;’A’&lt;&lt;’B’&lt;&lt;endl;<br>③  cout&lt;&lt;’A’&lt;&lt;setfill(‘<em>‘)&lt;&lt;right&lt;&lt;setw(7)&lt;&lt;’B’&lt;&lt;endl;<br>④ cout&lt;&lt;setfill(‘</em>‘)&lt;&lt;right&lt;&lt;setw(7)&lt;&lt;’A’&lt;&lt;’B’&lt;&lt;endl;</p>
+<pre class="line-numbers language-c"><code class="language-c"><span class="token comment" spellcheck="true">/*
+    AB******
+    A******B
+    A******B
+    ******AB
+    */</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h1 id="cmath"><a href="#cmath" class="headerlink" title="cmath"></a>cmath</h1><h2 id="pow（x的y次幂）"><a href="#pow（x的y次幂）" class="headerlink" title="pow（x的y次幂）"></a>pow（x的y次幂）</h2><p>函数名称:   pow()<br>函数原型:   double pow( double x, double y );<br>函数功能:   计算x的y次幂<br>pow(x , y) ,x的y次幂</p>
+<h2 id="exp（e的n次方）"><a href="#exp（e的n次方）" class="headerlink" title="exp（e的n次方）"></a>exp（e的n次方）</h2><p>exp（n）值为e^n次方</p>
+<pre class="line-numbers language-c"><code class="language-c">cout<span class="token operator">&lt;&lt;</span><span class="token function">exp</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//e的平方</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="log（取对数）"><a href="#log（取对数）" class="headerlink" title="log（取对数）"></a>log（取对数）</h2><p>log函数包括两种函数 一种以e为低的log（）函数<br>另一种为以10为底的log 10（）函数</p>
+<p>如果自定义以m为底，求log n的值<br>需要double a=log(n)/log(m)</p>
+<pre class="line-numbers language-c"><code class="language-c"><span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;iostream></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;iomanip></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;cstring></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;cmath></span></span>
+using namespace std<span class="token punctuation">;</span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    cout<span class="token operator">&lt;&lt;</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">2.7</span><span class="token punctuation">)</span><span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span>
+    cout<span class="token operator">&lt;&lt;</span><span class="token function">log10</span><span class="token punctuation">(</span><span class="token number">1000</span><span class="token punctuation">)</span><span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span>
+    <span class="token keyword">double</span> a<span class="token punctuation">;</span>
+    a<span class="token operator">=</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">)</span><span class="token operator">/</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    cout<span class="token operator">&lt;&lt;</span>a<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><img src="data:image/png;base64,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"></p>
+<h2 id="sqrt（平方根）"><a href="#sqrt（平方根）" class="headerlink" title="sqrt（平方根）"></a>sqrt（平方根）</h2><p>sqrt函数有三种形式</p>
+<p>double sqrt(double x);<br>float sqrtf(float x);<br>long double sqrtl(long double x);</p>
+<p>三种形式的区别只是参数和返回值的精度不同，float精度最低，double较高，long double精度最高。<br>一般来说，只要用sqrt()就足够了，但因为double类型精度比较高，所以运算所消耗的时间较长，因此在要求较高效率，较低精度的情况下，就可以用sqrtf()这个函数了。<br>如果精度要求非常高，可以用sqrtl()函数。</p>
+<h2 id="abs（取绝对值）"><a href="#abs（取绝对值）" class="headerlink" title="abs（取绝对值）"></a>abs（取绝对值）</h2><p>不同类型的数据使用不同类型的绝对值函数：<br>整型：<br>int abs(int i)  //返回整型参数i的绝对值 </p>
+<p>复数：<br>double cabs(struct complex znum)  //返回复数znum的绝对值  </p>
+<p>双精度浮点型：<br>double fabs(double x)  //返回双精度参数x的绝对值    </p>
+<p>长整型：<br>long labs(long n)  //返回长整型参数n的绝对值 </p>
+<h2 id="floor和ceil（实现四舍五入）"><a href="#floor和ceil（实现四舍五入）" class="headerlink" title="floor和ceil（实现四舍五入）"></a>floor和ceil（实现四舍五入）</h2><p>floor()<br>  不大于自变量的最大整数<br>Ceil()<br>  不小于自变量的最大整数<br>Round()<br>  四舍五入到最邻近的整数</p>
+<pre class="line-numbers language-c"><code class="language-c"><span class="token keyword">int</span> <span class="token function">round_double</span><span class="token punctuation">(</span><span class="token keyword">double</span> number<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>number <span class="token operator">></span> <span class="token number">0.0</span><span class="token punctuation">)</span> <span class="token operator">?</span> <span class="token function">floor</span><span class="token punctuation">(</span>number <span class="token operator">+</span> <span class="token number">0.5</span><span class="token punctuation">)</span> <span class="token punctuation">:</span> <span class="token function">ceil</span><span class="token punctuation">(</span>number <span class="token operator">-</span> <span class="token number">0.5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/sunxiaoke233/about" rel="external nofollow noreferrer">Sun xiaoke</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://sunxiaoke233.gitee.io/sunxiaoke233/2020/08/30/C++%E5%A4%B4%E6%96%87%E4%BB%B6/">http://sunxiaoke233.gitee.io/sunxiaoke233/2020/08/30/C++%E5%A4%B4%E6%96%87%E4%BB%B6/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/sunxiaoke233/about" target="_blank">Sun xiaoke</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/sunxiaoke233/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/sunxiaoke233/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/sunxiaoke233/2020/08/30/C++%20STL/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/sunxiaoke233/medias/featureimages/6.jpg" class="responsive-img" alt="C++ STL">
+                        
+                        <span class="card-title">C++ STL</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            algorithmsort（排序函数）sort函数有三个参数：
+（1）第一个是要排序的数组的起始地址；
+（2）第二个是结束的地址（最后一位要排序的地址）；
+（3）第三个参数是排序的方法，可以是从大到小也可以是从小到大，还可以不写第三个参数，
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-08-30
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/sunxiaoke233/categories/C-%E5%A4%B4%E6%96%87%E4%BB%B6/" class="post-category">
+                                    C++头文件
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/sunxiaoke233/2020/08/27/hello-world/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/sunxiaoke233/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        
+                        <span class="card-title">Hello World</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-27
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Sun xiaoke
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/sunxiaoke233/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/sunxiaoke233/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/sunxiaoke233/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/sunxiaoke233/libs/codeBlock/codeShrink.js"></script>
+
+
+<!-- 代码块折行 -->
+
+<style type="text/css">
+code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
+</style>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/sunxiaoke233/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h1, h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1, h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/sunxiaoke233/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="tencent"
+                   type="playlist"
+                   id="2975157822"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/sunxiaoke233/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            <span id="year">2020</span>
+            <a href="/sunxiaoke233/about" target="_blank">Sun xiaoke</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2020";
+                    var startMonth = "08";
+                    var startDate = "27";
+                    var startHour = "19";
+                    var startMinute = "45";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/xiaoke233" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1241383587@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1241383587" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1241383587" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+
+
+    <a href="https://cdn.jsdelivr.net/gh/xiaoke233/jscdn@1.0/weixin.jpg" class="tooltipped" target="_blank" data-tooltip="微信联系我: 16639416646" data-position="top" data-delay="50">
+        <i class="fab fa-weixin"></i>
+    </a>
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/sunxiaoke233/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/sunxiaoke233/search.xml", 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/sunxiaoke233/libs/materialize/materialize.min.js"></script>
+    <script src="/sunxiaoke233/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/sunxiaoke233/libs/aos/aos.js"></script>
+    <script src="/sunxiaoke233/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/sunxiaoke233/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/sunxiaoke233/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/sunxiaoke233/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/sunxiaoke233/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <script src="/sunxiaoke233/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
